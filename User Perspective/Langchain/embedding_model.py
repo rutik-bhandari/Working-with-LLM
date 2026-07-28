@@ -2,9 +2,6 @@
 ## find the document that is most similar to the input query from user using hugging face embedding model, downloaded locally and using cosine similarity
 
 
-
-
-
 # Import HuggingFaceEmbeddings.
 # It loads a pre-trained embedding model from Hugging Face
 # and provides methods to convert text into numerical vectors.
