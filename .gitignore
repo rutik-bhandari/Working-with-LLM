@@ -2,3 +2,7 @@
 requirements.txt
 venv/
 requirement.txt
+chatbot.db
+chatbot.db-shm
+chatbot.db-wal
+chatbot.db-x-checkpoints-3-checkpoint.bin

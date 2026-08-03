@@ -1,5 +1,5 @@
 import streamlit as st
-from chatbot_backend import chatbot
+from chatbot_backend import chatbot,retrieve_all_threads
 from langchain_core.messages import HumanMessage
 # uuid (Universally Unique Identifier) is used to generate random, globally unique IDs. 
 # In chatbot/RAG applications, it is commonly used to assign unique IDs to users, documents, sessions, or vector store records.
@@ -39,7 +39,7 @@ if 'thread_id' not in st.session_state:
      st.session_state['thread_id'] = generate_thread_id()
 
 if 'chat_threads' not in st.session_state:
-    st.session_state['chat_threads'] = []
+    st.session_state['chat_threads'] = retrieve_all_threads()
 
 add_thread(st.session_state['thread_id'])
 
